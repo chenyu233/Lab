@@ -4,84 +4,115 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
+<style>
+    body{
+        background-color: #E8EAF6;
+    }
+
+    .body2{
+        background-color: white;
+        padding: 0em;
+        margin: 0em;
+        border: white solid 0.5em;
+    }
+    .title{
+        color: white;
+        background-color: #7986CB;
+        padding: 1em;
+        margin: 0em;
+    }
+    .border{
+        border-style: solid ;
+        border-color: #E8EAF6;
+        border-top: transparent;
+        padding: 0em;
+        margin: 0em;
+        margin-top: 0.5em
+    }
+    img{
+        margin: 0em;
+        padding: 0em;
+        vertical-align: top;
+    }
+    p{
+        padding: 0em;
+        margin: 0em;
+    }
+    a {color:#00B0FF;}      /* 未访问链接*/
+    a:hover {color:#FF00FF; background-color: #F50057;color: white}  /* 鼠标移动到链接上 */
+</style>
+
 <body>
-    <table>
-        <tr>
-            <td><img src="images\logo.png" alt="no"></td>
-            <td><h2>Share Your Travels</h2></td>
-        </tr>
-    </table>
-
-
-
-    <nav>
-        <ul>
-            <li><a href="#" >Description</a></li>
-            <li><a href="#">Related Photos</a> </li>
-            <li><a href="#">Reviews</a> </li>
-        </ul>
-    </nav>
-
+    <div style="padding: 5%;padding-top: 0;padding-bottom: 0em">
     <section>
-        <h3>New York - Central Park</h3>
-        <h4>Description</h4>
-        <p>Photo by Randy Connolly</p>
-        <p>This photo of Conservatory in <a href="#">Central Park</a> in<a href="#">New York City </a>  was taken on October 22,2016 with a Canon EOS 30D camera</p>
+        <div style=" background-color: #1A237E;padding: 1em;">
+            <h1 style="color: white ;margin: 0em">Share your travels</h1>
+            <p style="color: white;font-style: italic;font-family: Times, serif;">Let us know where you're been</p>
+        </div>
 
-        <figure>
-            <img src="images\large-central-park.jpg" alt="no">
-            <figcaption>Conservatory Pond in Central Park</figcaption>
-        </figure>
+        <div style="background-color: #3F51B5;padding: 0.3em 1em;" >
 
-        <table>
-            <tr>
-                <td>Options:</td>
-                <td><img src="images\icon_download.png"></td>
-                <td><img src="images\icon_mail.png"></td>
-                <td><img src="images\icon_map.png"></td>
-                <td><img src="images\icon_up.png"></td>
-                <td><img src="images\icon_down.png"></td>
-            </tr>
-        </table>
-    </section>
-        <h3>Related Photos</h3>
-    
-        <table>
-            <tr>
-                <td><img src="images\related-square1.jpg"></td>
-                <td><img src="images\related-square2.jpg"></td>
-                <td><img src="images\related-square3.jpg"></td>
-            </tr>
-        </table>
-    <section>
-        <h3>Reviews</h3>
-
-        <table>
-            <tr>
-                <td><img src="images\icon_comment.png"></td>
-                <td>Ricardo on 2016-05-23</td>
-            </tr>
-        </table>
-
-        <p>Easy on the HDR buddy</p>
-
-        <hr>
-
-        <table>
-            <tr>
-                <td><img src="images\icon_comment.png"></td>
-                <td>Suan on 2016-11-18</td>
-            </tr>
-        </table>
-
-        <p>I love Central Park</p>
-
-        <hr>
+            <nav >
+                <a href="#description" style="padding:  0.3em" >Description</a>
+                <a href="#Related" style="padding: 0.3em">Related Photos</a>
+                <a href="#Reviews" style="padding:  0.3em">Reviews</a>
+            </nav>
+        </div>
     </section>
 
-    <footer>
-        <p><a href="#"> Home</a>|<a href="#">Brose</a>|<a href="#">Search</a></p>
-        <p>Copyright &#169 2017 Share Your Travels</p>
+
+
+    <div class="body2">
+        <section class="border" style="margin-top: 0em">
+            <h3 class="title" id="description" >New York - Central Park</h3>
+            <img src="images\large-central-park.jpg" alt="no" style="width: 100%;height: 100%;">
+            <p style="margin: 0em;padding: 0.5em  1em;background-color:#C5CAE9;color: #7990A3"><i>Conservatory Pond in Central Park</i></p>
+
+            <div style="padding:  0.5em  1em ">
+                <p><b>This photo of Conservatory in <a href="#">Central Park</a> in<a href="#">New York City </a>  was taken on October 22,2016 with a Canon EOS 30D camera</b></p>
+            </div>
+
+
+            <div style="padding: 0.5em 1em;text-align: right" >
+                <img src="images\icon_download.png" >
+                <img src="images\icon_mail.png">
+                <img src="images\icon_map.png">
+                <img src="images\icon_up.png">
+                <img src="images\icon_down.png">
+            </div>
+
+        </section>
+
+
+    <section class="border">
+        <h3 class="title" id="Related">Related Photos</h3>
+        <div>
+                    <img src="images\related-square1.jpg">
+                    <img src="images\related-square2.jpg">
+                    <img src="images\related-square3.jpg">
+        </div>
+    </section>
+
+
+    <section class="border" >
+        <h3 class="title" id="Reviews">Reviews</h3>
+        <div style="padding: 0.5em 1em 1em 1em">
+            <p style="padding-bottom: 0.5em"><span style="color:#C5CAE9;">By Ricardo on</span> <span style="color: #F5A2C1">2016-05-23</span></p>
+            <p style="padding-bottom: 0.5em"><b>Easy on the HDR buddy</b></p>
+            <hr style="margin: 0em">
+
+            <p  style="padding: 0.5em 0em"><span style="color: #C5CAE9;">By Suan on</span> <span style="color: #F5A2C1">2016-11-18</span></p>
+            <p  style="padding-bottom: 0.5em"><b>I love Central Park</b></p>
+            <hr style="margin: 0em">
+        </div>
+    </section>
+    </div>
+
+    <footer style="background-color: #1A237E;padding: 1em ;margin-top: 0.5em">
+        <p style="color: white;padding: 0.3em"><a href="#"> Home</a> | <a href="#">Brose</a> | <a href="#">Search</a></p>
+        <p style="color: white;padding: 0.3em;font-style: italic;">Copyright &#169 2017 Share Your Travels</p>
     </footer>
+    </div>
 </body>
 </html>
