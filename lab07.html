@@ -236,7 +236,7 @@
 
         deleteRow(deletes){
             for (let i = 0; i < deletes.length;i++){
-                if (deletes[i] == ""){
+                if (deletes[i] === ""){
                     this.table.tBodies[0].removeChild(this.table.tBodies[0].rows[0]);
                     return;
                 }
