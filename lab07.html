@@ -236,27 +236,20 @@
 
         deleteRow(deletes){
             for (let i = 0; i < deletes.length;i++){
-                if (deletes[i] == ""){
+                if (deletes[i] === ""){
                     this.table.tBodies[0].removeChild(this.table.tBodies[0].rows[0]);
                     return;
                 }
             }
-            let iterator = this.table.tBodies[0].childNodes[Symbol.iterator]();
-            let k = iterator.next();
-            while (!k.done) {
+            for(let i = 0;i < this.table.tBodies[0].rows.length; i++){
                 let tab = true;
-                for (let i = 0; i < deletes.length; i++) {
-                    if (!(deletes[i] === (k.value.childNodes[i]).innerText)) {
+                for (let k = 0; k < deletes.length; k++){
+                    if (!(deletes[k] === this.table.tBodies[0].rows[i].childNodes[k].innerText)){
                         tab = false;
                     }
                 }
-                if (tab) {
-                    this.table.tBodies[0].removeChild(k.value);
-                    iterator = this.table.tBodies[0].childNodes[Symbol.iterator]();
-                    k = iterator.next();
-                }
-                else {
-                    k = iterator.next();
+                if (tab){
+                    this.table.tBodies[0].removeChild(this.table.tBodies[0].rows[i]);
                 }
             }
         }
