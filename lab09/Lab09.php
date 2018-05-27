@@ -1,24 +1,6 @@
 <?php
 include 'travel-data.inc.php';
 
-//
-//asort($countries);
-//// we will display the filtered array
-//$filtered = array();
-//// first see if we should filter the countries
-//if (isset($_GET['country'])) {
-//
-//    // loop thru each image in dataset and see if its country matches request
-//    foreach ($images as $img) {
-//        if ($img['country'] == $_GET['country']) {
-//            // we have a match so add that image to filtered array
-//            $filtered[$img['id']] = $img;
-//        }
-//    }
-//}
-//else {
-//    // no filter was specified so show all images in dataset
-//    $filtered = $images;
 
 ?>
 
